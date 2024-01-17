@@ -1,0 +1,38 @@
+
+    
+<main class="form-signin">
+    <form action="/users/register" method="post">
+      <%- include("./include/message.ejs") %>
+        <div class="form-floating">
+            <input name="fullname" class="form-control mb-2" id="inputfullname" placeholder="نام خانوادگی">
+            <label for="floatingInput">نام خانوادگی</label>
+          </div>
+
+      <div class="form-floating">
+        <input type="email" name="email" class="form-control mb-2" id="inputemail" placeholder="name@example.com">
+        <label for="floatingInput">آدرس ایمیل</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="password" name="password" class="form-control mb-2" id="inputpassword" placeholder="رمز عبور">
+        <label for="floatingPassword">رمزعبور</label>
+      </div>
+
+      <div class="form-floating">
+        <input type="password" class="form-control mb-2" name="confirmPassword" 
+        id="inputconfirmpassword" placeholder=">تکرار کلمه عبور ">
+
+        <label for="floatingPassword">تکرار کلمه عبور </label>
+      </div>
+
+      <div class="checkbox mb-3">
+        <label >
+            <a href="/users/login">قبلا ثبت نام کردم</a>
+        </label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">ثبت نام</button>
+      
+    </body>
+  </html>
+  
